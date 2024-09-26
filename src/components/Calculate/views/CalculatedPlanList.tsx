@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Button, ListGroup, Modal } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../redux/store';
-import { addPayment, deletePayment } from '../redux/creditSlice';
-import "../styles/AnnualPlanList.css";
-import "../styles/CalculatedPlanList.css";
+import { RootState } from '../../../redux/store'; 
+import { addPayment, deletePayment } from '../../../redux/creditSlice'; 
+import "../../../styles/AnnualPlanList.css";
+import "../../../styles/CalculatedPlanList.css";
 
 interface IInstallments {
   date: string;
@@ -17,15 +17,12 @@ interface ICalculatedPlanListProps {
 
 const CalculatedPlanList: React.FC<ICalculatedPlanListProps> = ({ installments }) => {
   const dispatch = useDispatch();
-
   const payments = useSelector((state: RootState) => state.credit.payments);
 
   const [showModal, setShowModal] = useState(false);
   const [overrideInstallment, setOverrideInstallment] = useState<IInstallments | null>(null);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
-  const [showErrorModal, setShowErrorModal] = useState(false);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
-  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const handleAddInstallmentToList = (installment: IInstallments) => {
     const existingPayment = payments.find(payment => payment.date === installment.date);
@@ -41,7 +38,6 @@ const CalculatedPlanList: React.FC<ICalculatedPlanListProps> = ({ installments }
       }));
 
       setSuccessMessage(`Payment for date ${installment.date} successfully added!`);
-
       setShowSuccessModal(true); 
     }
   };
@@ -115,25 +111,13 @@ const CalculatedPlanList: React.FC<ICalculatedPlanListProps> = ({ installments }
         </Modal.Footer>
       </Modal>
 
-      <Modal show={showSuccessModal} onHide={ () => setShowSuccessModal(false) }>
+      <Modal show={ showSuccessModal}  onHide={ () => setShowSuccessModal(false) }>
         <Modal.Header closeButton>
           <Modal.Title>Success</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{successMessage}</Modal.Body>
+        <Modal.Body>{ successMessage }</Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={ () => setShowSuccessModal(false) }>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-
-      <Modal show={showErrorModal} onHide={ () => setShowErrorModal(false) }>
-        <Modal.Header closeButton>
-          <Modal.Title>Error</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{errorMessage}</Modal.Body>
-        <Modal.Footer>
-          <Button variant="primary" onClick={ () => setShowErrorModal(false) }>
             Close
           </Button>
         </Modal.Footer>

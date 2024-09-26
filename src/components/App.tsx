@@ -7,7 +7,7 @@ import Layout from './Layout';
 import Home from './AnnualPlan';
 import Add from './AddInstallment';
 import Euribor from './Euribor';
-import Calculate from './Calculate';
+import { CalculateController, CalculateForm, ErrorMessages, CalculatedPlanList} from './Calculate/';
 import { Modal, Button } from 'react-bootstrap';
 import "../styles/App.css";
 
@@ -53,8 +53,8 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/add" element={<Add />} />
-          <Route path='/euribor' element={<Euribor />} />
-          <Route path='/calculate' element={<Calculate />} />
+          <Route path="/euribor" element={<Euribor />} />
+          <Route path="/calculate" element={<CalculateController />} /> 
         </Routes>
       </Layout>
 
