@@ -7,7 +7,7 @@ import Layout from './Layout';
 import Home from './AnnualPlan';
 import Add from './AddInstallment';
 import Euribor from './Euribor';
-import { CalculateController, CalculateForm, ErrorMessages, CalculatedPlanList} from './Calculate/';
+import { CalculateController } from './Calculate/';
 import { Modal, Button } from 'react-bootstrap';
 import "../styles/App.css";
 
