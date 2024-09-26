@@ -1,0 +1,107 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f4f8;
+    font-family: 'Roboto', sans-serif;
+    padding: 150px 0 150px 0;
+}
+  
+.home-table-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 0 20px;
+}
+
+#home-table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+#home-table th, #home-table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#home-table th {
+  background-color: #96c1b0;
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+#home-table td {
+  background-color: #ffffff;
+  color: #34495e;
+  font-size: 1.1em;
+}
+
+.paid-td {
+  background-color: #d2f8d2 !important
+}
+
+.payment-date-table {
+  font-weight: 500;
+}
+
+.paid-edit-btn {
+  visibility: hidden;
+  font-size: 0.8em;
+}
+  
+#home-table td {
+  font-size: 1.1em;
+}
+
+#home-table td button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: cadetblue;
+}
+
+#home-table button {
+  font-size: 0.8em;
+}
+
+#home-table td button.success {
+  font-size: 0.8em;
+  background-color: #27ae60;
+  border: none;
+  color: white;
+}
+  
+#home-table td button.warning {
+  font-size: 0.8em;
+  background-color: #f39c12;
+  border: none;
+  color: white;
+}
+
+.progress-container {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.progress-container .progress-bar {
+  width: 100%;
+}
+
+.progress-container img {
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 768px) {
+  #home-table th, #home-table td {
+    font-size: 14px;
+  }
+
+  .fixed-footer h2 {
+    font-size: 16px;
+  }
+}
+  

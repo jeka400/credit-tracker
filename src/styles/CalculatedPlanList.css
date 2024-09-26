@@ -1,0 +1,36 @@
+.added-payment {
+    background-color: #d4edda; 
+    border-color: #c3e6cb; 
+    color: #155724; 
+  }
+  
+  #payments-list .item-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #payments-list .payment-date {
+    font-weight: bold;
+  }
+  
+  #payments-list .payment-amount {
+    font-size: 1.1rem;
+  }
+  
+  #payments-list .payment-curr {
+    font-size: 0.9rem;
+    margin-left: 5px;
+    color: #6c757d; 
+  }
+  
+.added-payment {
+  background-color: #d2f8d2 !important;
+}
+
+#btn-add {
+  background-color: cadetblue !important;
+  padding:  5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}

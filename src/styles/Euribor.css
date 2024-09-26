@@ -1,0 +1,33 @@
+#euribor {
+    padding-top: 150px;
+}
+
+#euribor-table th {
+    background-color: #96c1b0;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+#euribor th span {
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+#euribor-table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+#euribor-table th, #euribor-table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#euribor-table td {
+  background-color: #ffffff;
+  color: #34495e;
+  font-size: 1.1em;
+}
