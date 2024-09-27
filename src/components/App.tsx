@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
 import { setPayments } from '../redux/creditSlice';
-import Layout from './Layout';
-import Add from './AddInstallment';
-import Euribor from './Euribor';
-import AnnualPlan from './AnnualPlan';
-import Calculate from './Calculate';
+import Layout from './layout/Layout';
+import AppRoutes from '../routes/AppRoutes';
 import { Modal, Button } from 'react-bootstrap';
 import "../styles/App.css";
 
 const App: React.FC = () => {
   const dispatch = useDispatch();
+  
   const payments = useSelector((state: RootState) => state.credit.payments);
 
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -50,21 +48,18 @@ const App: React.FC = () => {
   return (
     <Router>
       <Layout>
-        <Routes>
-          <Route path="/" element={<AnnualPlan />} />
-          <Route path="/add" element={<Add />} />
-          <Route path="/euribor" element={<Euribor />} />
-          <Route path="/calculate" element={<Calculate />} /> 
-        </Routes>
+        <AppRoutes /> 
       </Layout>
 
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
+      <Modal show={ showModal } onHide={ () => setShowModal(false) }>
         <Modal.Header closeButton>
-          <Modal.Title>{modalContent.title}</Modal.Title>
+          <Modal.Title>{ modalContent.title }</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{modalContent.message}</Modal.Body>
+
+        <Modal.Body>{ modalContent.message }</Modal.Body>
+
         <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowModal(false)}>
+          <Button variant="secondary" onClick={ () => setShowModal(false) }>
             Close
           </Button>
         </Modal.Footer>
