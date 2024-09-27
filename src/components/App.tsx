@@ -4,10 +4,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
 import { setPayments } from '../redux/creditSlice';
 import Layout from './Layout';
-import Home from './AnnualPlan';
 import Add from './AddInstallment';
-import EuriborController from './Euribor';
-import { CalculateController } from './Calculate/';
+import Euribor from './Euribor';
+import AnnualPlan from './AnnualPlan';
+import Calculate from './Calculate';
 import { Modal, Button } from 'react-bootstrap';
 import "../styles/App.css";
 
@@ -51,10 +51,10 @@ const App: React.FC = () => {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<AnnualPlan />} />
           <Route path="/add" element={<Add />} />
-          <Route path="/euribor" element={<EuriborController />} />
-          <Route path="/calculate" element={<CalculateController />} /> 
+          <Route path="/euribor" element={<Euribor />} />
+          <Route path="/calculate" element={<Calculate />} /> 
         </Routes>
       </Layout>
 
