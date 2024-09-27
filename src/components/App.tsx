@@ -6,7 +6,7 @@ import { setPayments } from '../redux/creditSlice';
 import Layout from './Layout';
 import Home from './AnnualPlan';
 import Add from './AddInstallment';
-import Euribor from './Euribor';
+import EuriborController from './Euribor';
 import { CalculateController } from './Calculate/';
 import { Modal, Button } from 'react-bootstrap';
 import "../styles/App.css";
@@ -53,7 +53,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/add" element={<Add />} />
-          <Route path="/euribor" element={<Euribor />} />
+          <Route path="/euribor" element={<EuriborController />} />
           <Route path="/calculate" element={<CalculateController />} /> 
         </Routes>
       </Layout>
