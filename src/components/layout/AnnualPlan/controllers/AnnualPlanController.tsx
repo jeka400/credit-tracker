@@ -3,8 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../../redux/store';
 import { togglePaid, editPayment } from '../../../../redux/creditSlice';
 import AnnualPlanTable from '../views/AnnualPlanTable';
-import AnnualPlanProgressBar from '../views/AnnualPlanProgressBar';
-import { Payment } from '../models/annualPlanModel';
 import "../../../../styles/AnnualPlanList.scss";
 
 
@@ -30,7 +28,6 @@ const AnnualPlanController: React.FC = () => {
         onTogglePaid={ handleTogglePaid } 
         onEditPayment={ handleEditPayment } 
       />
-      <AnnualPlanProgressBar payments={ payments } />
     </>
   );
 };

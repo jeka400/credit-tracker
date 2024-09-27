@@ -32,7 +32,7 @@ const AnnualPlanTable: React.FC<IAnnualPlanTableProps> = ({ payments, onTogglePa
                 
                 <td className={ payment.paid ? 'paid-td payment-amount' : "payment-amount" }>
                   {payment.amount.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} 
-                  <span className='payment-curr'>RSD</span>
+                  <span className='payment-curr'> RSD</span>
                 </td>
                 
                 <td className={ payment.paid ? 'paid-td' : "" }>{ payment.paid ? 'Paid' : 'Not Paid' }</td>

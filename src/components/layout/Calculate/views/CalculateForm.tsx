@@ -2,6 +2,7 @@ import React, {  useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import ErrorMessages from './ErrorMessages';
 import "../../../../styles/Calculate.scss";
+import "../../../../styles/CalculatedPlanList.scss";
 
 interface CalculateFormProps {
   onCalculate: (data: {
@@ -154,7 +155,7 @@ const CalculateForm: React.FC<CalculateFormProps> = ({ onCalculate }) => {
         <ErrorMessages message={ errors.euriborError } />
       </Form.Group>
 
-      <Button type="submit">Calculate</Button>
+      <Button type="submit" id='btn-add'>Calculate</Button>
     </Form>
   );
 };

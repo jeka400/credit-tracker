@@ -5,7 +5,6 @@ import "../../styles/Home.scss";
 import "../../styles/Footer.scss";
 import { Container } from 'react-bootstrap';
 
-
 const Footer: React.FC = () => {
   const payments = useSelector((state: RootState) => state.credit.payments);
 
@@ -17,7 +16,7 @@ const Footer: React.FC = () => {
       <Container>
         <h2 className='payment-amount'>
           Total Amount: 
-          <span className='payment-number'>
+           <span className='payment-number'>
             { totalAmount.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} 
           </span> 
           <span className='payment-curr'> RSD</span>
