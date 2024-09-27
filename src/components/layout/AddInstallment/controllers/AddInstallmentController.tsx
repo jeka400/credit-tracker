@@ -5,7 +5,7 @@ import AddInstallmentForm from '../views/AddInstallmentForm';
 import ConfirmationModal from '../views/ConfirmationModal';
 import SuccessErrorModal from '../views/SuccessErrorModal';
 import { IPayment } from '../models/paymentModel';
-import "../../../../styles/Add.css";
+import "../../../../styles/Add.scss";
 import { Container } from 'react-bootstrap';
 import AnnualPlanList from '../views/AnnualPlanList';
 

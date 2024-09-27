@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, ListGroup } from 'react-bootstrap';
 import { IPayment } from '../models/paymentModel';
+import  "../../../../styles/AnnualPlanList.scss";
 
 interface IAnnualPlanListProps {
   payments: IPayment[];

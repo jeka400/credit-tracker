@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
-import "../../styles/Home.css";
-import "../../styles/Footer.css";
+import "../../styles/Home.scss";
+import "../../styles/Footer.scss";
 import { Container } from 'react-bootstrap';
 
 

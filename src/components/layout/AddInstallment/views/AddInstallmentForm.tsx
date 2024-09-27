@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { IPayment } from '../models/paymentModel';
-import "../../../../styles/Add.css";
+import "../../../../styles/Add.scss";
 
 interface IAddInstallmentFormProps {
   onSubmit: (payment: IPayment) => void;

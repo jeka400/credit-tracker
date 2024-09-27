@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from 'react-router-dom';
-import "../../styles/Navigation.css";
+import "../../styles/Navigation.scss";
 
 const Navigation: React.FC = () => {
     return (

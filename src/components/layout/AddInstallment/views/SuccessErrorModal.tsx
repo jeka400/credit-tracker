@@ -1,6 +1,6 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import "../../../../styles/Add.css";
+import "../../../../styles/Add.scss";
 
 interface ISuccessErrorModalProps {
   show: boolean;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Table, Button } from 'react-bootstrap';
 import { Payment } from '../models/annualPlanModel';
-import "../../../../styles/Home.css";
-import "../../../../styles/AnnualPlanList.css";
+import "../../../../styles/Home.scss";
+import "../../../../styles/AnnualPlanList.scss";
 
 interface IAnnualPlanTableProps {
   payments: Payment[];

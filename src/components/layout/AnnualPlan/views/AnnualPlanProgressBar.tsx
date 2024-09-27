@@ -1,8 +1,8 @@
 import React from 'react';
 import { ProgressBar } from 'react-bootstrap';
 import { Payment } from '../models/annualPlanModel';
-import "../../../../styles/Home.css";
-import "../../../../styles/AnnualPlanList.css";
+import "../../../../styles/Home.scss";
+import "../../../../styles/AnnualPlanList.scss";
 
 interface IAnnualPlanProgressBarProps {
   payments: Payment[];

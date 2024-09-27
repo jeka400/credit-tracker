@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../../../styles/Calculate.css";
+import "../../../../styles/Calculate.scss";
 
 
 interface ErrorMessagesProps {

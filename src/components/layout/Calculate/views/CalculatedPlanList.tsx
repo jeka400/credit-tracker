@@ -3,8 +3,8 @@ import { Button, ListGroup, Modal } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../../redux/store'; 
 import { addPayment, deletePayment } from '../../../../redux/creditSlice'; 
-import "../../../../styles/AnnualPlanList.css";
-import "../../../../styles/CalculatedPlanList.css";
+import "../../../../styles/AnnualPlanList.scss";
+import "../../../../styles/CalculatedPlanList.scss";
 
 interface IInstallments {
   date: string;

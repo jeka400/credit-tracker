@@ -1,0 +1,36 @@
+@import './variables';
+
+#euribor {
+  padding-top: 150px;
+}
+
+#euribor-table th {
+  background-color: $euribor-background-color;
+  color: $euribor-text-color;
+  font-weight: $euribor-heading-weight; 
+  font-size: 1em;
+}
+
+#euribor th span {
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
+#euribor-table {
+  background-color: $euribor-cell-background-color;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#euribor-table th,
+#euribor-table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#euribor-table td {
+  background-color: $euribor-cell-background-color; 
+  color: $euribor-cell-text-color;
+  font-size: 1.1em;
+}

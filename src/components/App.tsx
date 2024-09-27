@@ -6,7 +6,7 @@ import { setPayments } from '../redux/creditSlice';
 import Layout from './layout/Layout';
 import AppRoutes from '../routes/AppRoutes';
 import { Modal, Button } from 'react-bootstrap';
-import "../styles/App.css";
+import "../styles/App.scss";
 
 const App: React.FC = () => {
   const dispatch = useDispatch();

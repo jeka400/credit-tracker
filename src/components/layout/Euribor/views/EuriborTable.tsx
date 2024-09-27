@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 import { EuriborData } from '../models/euriborModel';
-import "../../../../styles/Euribor.css";
+import "../../../../styles/Euribor.scss";
 
 interface IEuriborTableProps {
   euribor: EuriborData;

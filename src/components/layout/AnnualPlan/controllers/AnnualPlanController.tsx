@@ -5,7 +5,7 @@ import { togglePaid, editPayment } from '../../../../redux/creditSlice';
 import AnnualPlanTable from '../views/AnnualPlanTable';
 import AnnualPlanProgressBar from '../views/AnnualPlanProgressBar';
 import { Payment } from '../models/annualPlanModel';
-import "../../../../styles/AnnualPlanList.css";
+import "../../../../styles/AnnualPlanList.scss";
 
 
 const AnnualPlanController: React.FC = () => {

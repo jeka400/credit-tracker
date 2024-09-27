@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IInstallment, calculateInstallments } from '../models/calculateModel';
 import CalculateForm from '../views/CalculateForm';
 import CalculatedPlanList from '../views/CalculatedPlanList';
-import "../../../../styles/Calculate.css";
+import "../../../../styles/Calculate.scss";
 
 const CalculateController: React.FC = () => {
   const [installments, setInstallments] = useState<IInstallment[]>([]);

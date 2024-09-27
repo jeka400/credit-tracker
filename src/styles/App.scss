@@ -1,0 +1,13 @@
+@import './variables';
+
+body {
+  background-color: $light-background; 
+}
+
+h1, h3 {
+  color: $heading-color; 
+}
+
+* {
+  font-size: $default-font-size; 
+}
